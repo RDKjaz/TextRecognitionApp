@@ -56,7 +56,7 @@ class MainViewController: UIViewController {
             }))
             
             alert.addAction(UIAlertAction(title: "Выбрать фото", style: .default, handler: { _ in
-                self.openGallary()
+                self.openGallery()
             }))
             
             alert.addAction(UIAlertAction.init(title: "Отмена", style: .cancel, handler: nil))
@@ -78,7 +78,7 @@ class MainViewController: UIViewController {
             }
         }
         
-        func openGallary(){
+        func openGallery(){
             imagePicker.sourceType = UIImagePickerController.SourceType.photoLibrary
             imagePicker.allowsEditing = true
             imagePicker.delegate = self
